@@ -1,0 +1,26 @@
+<svg width="280" height="60" viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Abstract Symbol: Two interconnected elements forming "LE" -->
+  <g id="symbol">
+    <!-- Left element (L shape) -->
+    <path d="M10 10 L10 50 L30 50" stroke="#27a6ea" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="10" cy="10" r="5" fill="#27a6ea"/>
+    <circle cx="30" cy="50" r="5" fill="#27a6ea"/>
+    
+    <!-- Right element (E shape) -->
+    <path d="M40 10 L60 10 M40 30 L55 30 M40 50 L60 50" stroke="#27a6ea" stroke-width="6" stroke-linecap="round"/>
+    <path d="M40 10 L40 50" stroke="#27a6ea" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Connection element -->
+    <path d="M30 50 Q35 40 40 30" stroke="#27a6ea" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <g id="wordmark" transform="translate(80, 0)">
+    <text x="0" y="30" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#1f2937">
+      Lawsons
+    </text>
+    <text x="0" y="52" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#6b7280" letter-spacing="2">
+      ENTERPRISES
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+OG Image Placeholder
+
+This is a placeholder file indicating that an Open Graph image (og-image.png) should be created.
+
+Recommended specifications:
+- Size: 1200 x 630 pixels
+- Format: PNG or JPG
+- Content: Lawsons Enterprises Ltd branding with tagline "Building Digital Businesses"
+- Background: Gradient from #27a6ea to #0ea5e9 (primary to accent)
+- Include logo and company name
+
+Once created, name the file "og-image.png" and place it in this directory.
+The same image can be used for Twitter card images.
+
+You can also create an apple-touch-icon.png (180 x 180 pixels) for iOS devices.

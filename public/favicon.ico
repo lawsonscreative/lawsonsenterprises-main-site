@@ -1,0 +1,16 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Abstract Symbol: Two interconnected elements -->
+  <g id="symbol">
+    <!-- Left element (L shape) -->
+    <path d="M15 15 L15 65 L40 65" stroke="#27a6ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="15" cy="15" r="6" fill="#27a6ea"/>
+    <circle cx="40" cy="65" r="6" fill="#27a6ea"/>
+    
+    <!-- Right element (E shape) -->
+    <path d="M50 15 L75 15 M50 40 L70 40 M50 65 L75 65" stroke="#27a6ea" stroke-width="7" stroke-linecap="round"/>
+    <path d="M50 15 L50 65" stroke="#27a6ea" stroke-width="7" stroke-linecap="round"/>
+    
+    <!-- Connection element -->
+    <path d="M40 65 Q45 52 50 40" stroke="#27a6ea" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+</svg>
