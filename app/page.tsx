@@ -20,6 +20,7 @@ import {
   CheckCircle2,
   Building2,
   Database,
+  type LucideIcon,
 } from 'lucide-react';
 
 function useScrollReveal() {
@@ -826,7 +827,7 @@ function BrandCard({
   body: string;
   status: string;
   statusColor: StatusColor;
-  Icon: React.ComponentType<{ size?: number; className?: string; strokeWidth?: number; style?: React.CSSProperties }>;
+  Icon: LucideIcon;
   href?: string;
   external?: boolean;
 }) {
