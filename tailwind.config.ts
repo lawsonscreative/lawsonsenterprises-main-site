@@ -1,4 +1,31 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+
+const brand = {
+  50: '#EEF2FF',
+  100: '#E0E7FF',
+  200: '#C7D2FE',
+  300: '#A5B4FC',
+  400: '#818CF8',
+  500: '#6366F1',
+  600: '#4F46E5',
+  700: '#4338CA',
+  800: '#3730A3',
+  900: '#312E81',
+};
+
+const grey = {
+  50: '#F8F8FA',
+  100: '#F0F0F3',
+  200: '#E0E0E5',
+  300: '#C1C1C9',
+  400: '#9D9DA8',
+  500: '#7A7A87',
+  600: '#5C5C69',
+  700: '#44444F',
+  800: '#2E2E38',
+  900: '#1A1A21',
+  950: '#0F0F12',
+};
 
 const config: Config = {
   content: [
@@ -9,25 +36,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#27a6ea',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
-        },
+        brand,
+        grey,
+        // Backwards-compat: legacy `primary-*` usages on /about, /contact,
+        // /privacy, /terms now resolve to the brand-indigo palette so the
+        // whole site upgrades together without touching every file.
+        primary: brand,
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-plus-jakarta)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-jetbrains-mono)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+      },
+      letterSpacing: {
+        tightest: '-0.05em',
       },
     },
   },
   plugins: [],
-}
+};
 
-export default config
+export default config;

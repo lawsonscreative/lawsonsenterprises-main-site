@@ -93,7 +93,8 @@ export default function Privacy() {
               <p className="text-gray-600 mb-1">Lawsons Enterprises Ltd</p>
               <p className="text-gray-600 mb-1">Company Number: 16433965</p>
               <p className="text-gray-600 mb-1">VAT: GB495884223</p>
-              <p className="text-gray-600">Registered Office: London, United Kingdom</p>
+              <p className="text-gray-600 mb-1">ICO Registration: ZC120359</p>
+              <p className="text-gray-600">Registered Office: Kent, United Kingdom</p>
             </div>
           </div>
         </div>

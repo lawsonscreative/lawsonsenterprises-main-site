@@ -3,18 +3,16 @@ import { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Lawsons Enterprises Ltd',
-    short_name: 'Lawsons Enterprises',
-    description: 'Building Digital Businesses',
+    short_name: 'Lawsons',
+    description:
+      'UK product company building cloud control assurance, SaaS platforms and specialist technology services.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#ffffff',
-    theme_color: '#27a6ea',
+    background_color: '#F8F8FA',
+    theme_color: '#4F46E5',
     icons: [
-      {
-        src: '/favicon.ico',
-        sizes: 'any',
-        type: 'image/x-icon',
-      },
+      { src: '/icon.svg', sizes: 'any', type: 'image/svg+xml' },
+      { src: '/apple-icon', sizes: '180x180', type: 'image/png' },
     ],
   };
 }

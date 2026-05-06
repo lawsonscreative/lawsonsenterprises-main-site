@@ -1,11 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    background-color: #F8F8FA;
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply font-sans antialiased;
+    background-color: #F8F8FA;
+    color: #0F0F12;
+    font-family: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  *:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #818CF8, 0 0 0 4px rgba(79, 70, 229, 0.15);
+    border-radius: 4px;
   }
 }
+
+/* Scroll-triggered reveal */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero load animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-headline { animation: fadeInUp 0.6s ease both; }
+.hero-sub { animation: fadeInUp 0.6s ease 0.15s both; }
+.hero-cta { animation: fadeInUp 0.6s ease 0.3s both; }
+.hero-trust { animation: fadeInUp 0.6s ease 0.45s both; }
+
+/* Tabular nums for stat rows */
+.tabular-nums { font-variant-numeric: tabular-nums; }
